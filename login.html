@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+
+    </head>
+    <body>
+        <div class="login">
+            <form id="login">
+            <input type="text" id="email" placeholder="Email"><br>
+            <input type="password" id="password" placeholder="Password"><br>
+            <input type="submit" value="login" onclick="login()">
+            <div id="register" ></div></form>
+            <script>
+
+                var adminData=localStorage.getItem("admin");
+                if(adminData==null){
+                    var html='<a href="register.html"><input type="button" value="Register"></a>';
+                    document.getElementById("register").innerHTML=html;
+                }
+                
+            </script>
+            
+        </div>
+    </body>
+</html>
